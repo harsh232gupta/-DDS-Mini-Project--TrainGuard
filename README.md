@@ -7,7 +7,6 @@ Passenger Monitoring<br>
 1. 221CS137, Md. Faisal Raza, mohammadfaisalraza.221cs137@nitk.edu.in, 6307707818
 2. 221CS128, Harsh Gupta, harsh.221cs128@nitk.edu.in, 9555468659
 3. 221CS141, Rahul, rahul.221cs141@nitk.edu.in, 9468121389
- <h1>Abstract:</h1>
 <h2>Idea</h2>:To make a digital system which counts passenger entered in 
 trains and warn us if no of passengers are over limit.
    
