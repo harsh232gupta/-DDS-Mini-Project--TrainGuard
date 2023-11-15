@@ -3,7 +3,7 @@
 
 ## Team Details
 <details>
-<summary>Details</summary>
+<summary>details</summary>
     
 > *  Semester: 3rd Sem B. Tech. CSE
 > * Section: S1
@@ -15,7 +15,7 @@
 
 ## Abstract: 
 <details>
-<summary>Details</summary>
+<summary>details</summary>
 
 <h2>Idea</h2> To make a digital system which counts passenger entered in 
 trains and warn us if no of passengers are over limit.
@@ -90,11 +90,9 @@ demonstrates the power of technology in addressing realworld challenges and emp
 innovation in modern transportation systems.
 </details>
 
-## Working
+## Working:
 <details>
-<summary>Details</summary>
-
-<h2>Working</h2>
+<summary>details</summary>
 The Train Passenger Counter project functions by employing a 
 microcontroller, such as an Arduino Uno, to efficiently 
 monitor and manage passenger occupancy within train 
@@ -131,8 +129,6 @@ responsive and efficient solution that combines technology
 with manual input to monitor and manage passenger counts 
 in real-time, prioritizing passenger safety and travel 
 convenience within train compartments.
-</details>
-
 
 <h1>Functional Table</h1>
 <br>
@@ -209,20 +205,93 @@ convenience within train compartments.
     </tr>
 </table>
 
+### Flow Chart
 
-<h2>SUMMARY:</h2>
-This project introduces the development of a Train 
-Passenger Counter system designed to efficiently 
-monitor and manage passenger occupancy in train 
-compartments. The primary objective is to ensure the 
-safety and comfort of passengers by implementing a 
-robust counting mechanism that utilizes modern 
-technology.
-The motivation behind this project stems from the critical 
-need for passenger safety and compliance with 
-occupancy regulations within public transportation 
-systems. Ensuring that trains do not exceed safe 
-passenger limits is paramount to avoid overcrowding and 
-related safety hazards. Thus, this project serves as a 
-valuable solution for both passengers and train operators.
+<details>
+<summary>Flow Chart</summary>
+
+![image](https://github.com/harsh232gupta/DDS-Mini-Project--TrainGuard/blob/master/Images/project.jpg)
+
+
+</details>
+</details>
+
+## Logisim Circuit Diagram
+<details>
+<summary>details</summary>
+    
+![image](https://github.com/harsh232gupta/DDS-Mini-Project--TrainGuard/blob/master/Images/Screenshot%202023-11-06%20221331.png)
+</details>
+
+## Verilog Code
+<details>
+    <summary>
+        details
+    </summary>
+
+
+<details>
+<summary>Verilog</summary>
+
+    
+
+```
+module up_counter(
+input wire clk, // Clock input
+input wire rst, // Reset input
+output reg [3:0] count // 4-bit counter output
+);
+always @(posedge clk or posedge rst) begin
+if (rst) begin
+count <= 4'b0000; // Reset the count to 0 when the reset signal is 
+active
+end else begin
+count <= count + 1; // Increment the count on each rising clock edge
+end
+end
+endmodule
+```
+
+</details>
+
+
+<details>
+<summary>Test Bench</summary>
+
+````
+module up_counter_tb;
+reg clk; // Clock signal
+reg rst; // Reset signal
+wire [3:0] count; // Counter output
+// Instantiate the up_counter module
+up_counter counter(
+.clk(clk),
+.rst(rst),
+.count(count)
+);
+initial begin
+// Initialize signals
+clk = 0;
+rst = 0;
+// Reset the counter
+rst = 1;
+#5 rst = 0;
+// Simulate clock and observe counter values
+$display("Time\tCount");
+$monitor("%d\t%d", $time, count);
+// Generate clock signal (oscillate between 0 and 1)
+repeat(4) begin
+#5 clk = ~clk;
+end
+end
+endmodule
+
+
+````
+
+</details>
+
+
+
+</details>
        
