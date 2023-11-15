@@ -1,18 +1,28 @@
-# -DDS-Mini-Project--TrainGuard: Empowering Ticket Collectors with Smart Passenger Monitoring
+# TrainGuard: Empowering Ticket Collectors with Smart Passenger Monitoring
 
-This Mini Project aims to monitor number of passengers In a coach and warn Ticket collector if number of passengers exceed limit.
-TrainGuard: Empowering Ticket Collectors with Smart 
-Passenger Monitoring<br>
-<br>Team members:
-1. 221CS137, Md. Faisal Raza, mohammadfaisalraza.221cs137@nitk.edu.in, 6307707818
-2. 221CS128, Harsh Gupta, harsh.221cs128@nitk.edu.in, 9555468659
-3. 221CS141, Rahul, rahul.221cs141@nitk.edu.in, 9468121389
-<h2>Idea</h2>:To make a digital system which counts passenger entered in 
+
+## Team Details
+<details>
+<summary>Details</summary>
+    
+> *  Semester: 3rd Sem B. Tech. CSE
+> * Section: S1
+
+* 221CS137, Md. Faisal Raza, mohammadfaisalraza.221cs137@nitk.edu.in, 6307707818
+* 221CS128, Harsh Gupta, harsh.221cs128@nitk.edu.in, 9555468659
+* 221CS141, Rahul, rahul.221cs141@nitk.edu.in, 9468121389
+</details>
+
+## Abstract: 
+<details>
+<summary>Details</summary>
+
+<h2>Idea</h2> To make a digital system which counts passenger entered in 
 trains and warn us if no of passengers are over limit.
    
  
-<h2>Components Required:
-</h2>
+<h3>Components Required:
+</h3>
 1.Microcontroller (e.g., Arduino Uno)
 2.Push Buttons (for manual input)
 3.LED Display Module (e.g., 7-segment display)
@@ -78,6 +88,12 @@ safer and more convenient for passengers while aiding train
 operators in managing their services efficiently. It 
 demonstrates the power of technology in addressing realworld challenges and emphasizes the importance of 
 innovation in modern transportation systems.
+</details>
+
+## Working
+<details>
+<summary>Details</summary>
+
 <h2>Working</h2>
 The Train Passenger Counter project functions by employing a 
 microcontroller, such as an Arduino Uno, to efficiently 
@@ -115,7 +131,9 @@ responsive and efficient solution that combines technology
 with manual input to monitor and manage passenger counts 
 in real-time, prioritizing passenger safety and travel 
 convenience within train compartments.
-<br>
+</details>
+
+
 <h1>Functional Table</h1>
 <br>
 <table>
@@ -190,6 +208,8 @@ convenience within train compartments.
         <td>1</td>
     </tr>
 </table>
+
+
 <h2>SUMMARY:</h2>
 This project introduces the development of a Train 
 Passenger Counter system designed to efficiently 
